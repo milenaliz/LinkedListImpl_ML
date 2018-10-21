@@ -17,6 +17,11 @@ public class Main {
         customList.add("Trzy");
         customList.add("Cztery");
 
+        customList.printList();
+        customList.find(2);
+
+
+
 
         List<String> list = new LinkedList<>();
 

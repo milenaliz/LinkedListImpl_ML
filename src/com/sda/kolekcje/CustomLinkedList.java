@@ -8,6 +8,21 @@ public class CustomLinkedList<E> implements CustomList<E> {
     public CustomLinkedList(){
         head = new Node(null);
     }
+
+    @Override
+    public void addTail(E e) {
+        
+    }
+
+    @Override
+    public void find(int index) {
+        Node tmp = head;
+    for (int i=0; i<index; i++){
+        tmp = tmp.next;
+    }
+        System.out.println(tmp);
+    }
+
     @Override
     public E get(int index) {
         return null;
@@ -23,7 +38,14 @@ public class CustomLinkedList<E> implements CustomList<E> {
         System.out.println("Wartość next: "+ head.next);
     size++;
     }
+    public void printList(){
+        Node tmp = head;
+        while (tmp != null){
+            System.out.println(tmp.data);
+            tmp = tmp.next;
+        }
 
+    }
     @Override
     public int size() {
         return 0;
