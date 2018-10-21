@@ -10,6 +10,14 @@ public class Main {
         //ArrayList - implementacja tablicowa,
         //LinkedList - implementacja wiązana
 
+        CustomList<String> customList = new CustomLinkedList<>();
+
+        customList.add("Jeden");
+        customList.add("Dwa");
+        customList.add("Trzy");
+        customList.add("Cztery");
+
+
         List<String> list = new LinkedList<>();
 
         list.add("Jan");
